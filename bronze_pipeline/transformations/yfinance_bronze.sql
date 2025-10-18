@@ -2,7 +2,7 @@
 CREATE OR REFRESH STREAMING LIVE TABLE yfinance
 TBLPROPERTIES ('quality' = 'bronze')
 AS
--- Read JSON from volume and set map of options
+-- Reading JSON from volume and set map of options
 SELECT * 
 FROM cloud_files('/Volumes/lakehouse/raw_public/yfinance/commodities/latest_prices/'
 , 'json',
