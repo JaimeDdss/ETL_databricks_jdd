@@ -1,5 +1,5 @@
 -- Creating streaming table
-CREATE OR REFRESH STREAMING LIVE TABLE bitcoin
+CREATE OR REFRESH STREAMING LIVE TABLE yfinance
 TBLPROPERTIES ('quality' = 'bronze')
 AS
 -- Read JSON from volume and set map of options
